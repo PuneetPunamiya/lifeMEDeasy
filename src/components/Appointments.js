@@ -10,7 +10,7 @@ class Register extends Component {
 
         super(props);
         this.state = {
-            doctor_names: ['abc', 'def'],
+            doctor_names: ['abc', 'def']
             name: "",
             doctor: "",
             date: "",
@@ -42,7 +42,7 @@ class Register extends Component {
     }
 
     postData(e) {
-        
+
         e.preventDefault()
         axios
             .post(`${backend_url}/appointment`, {
